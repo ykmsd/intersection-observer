@@ -138,6 +138,8 @@ export default function App() {
           <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">
             Intersection Observer API
           </a>
+        </li>
+        <li>
           <a href="https://web.dev/intersectionobserver/">
             IntersectionObserver's coming into view
           </a>
