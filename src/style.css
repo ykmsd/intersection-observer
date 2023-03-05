@@ -3,3 +3,104 @@ p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.description {
+  width: 400px;
+}
+
+.treshhold {
+  width: 100px;
+}
+
+.background {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 30px;
+  display: grid;
+  /* align-items: center; */
+  border: 1px black dashed;
+}
+
+.grid-container {
+  padding: 30px;
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(10, 71.11px);
+}
+
+.grid-item {
+  border: 1px solid pink;
+  width: 400px;
+}
+
+.grid-item:before {
+  display: block;
+  background: pink;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+
+.g1:before {
+  content: '1';
+}
+
+.g2:before {
+  content: '2'
+}
+
+.g3:before {
+  content: '3'
+}
+
+.g4:before {
+  content: '4'
+}
+
+.g5:before {
+  content: '5'
+}
+
+.g6:before {
+  content: '6'
+}
+
+.g7:before {
+  content: '7'
+}
+
+.g8:before {
+  content: '8'
+}
+
+.g9:before {
+  content: '9'
+}
+
+.g10:before {
+  content: '10'
+}
+
+.pistache-color {
+  background: #81c784;
+}
+
+.indy-color {
+  background: #7986cb;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
