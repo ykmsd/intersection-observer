@@ -29,7 +29,7 @@ export default function App() {
   let observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log("entry");
+        console.log('[IntersectionObserver] this is called only when the visibility passes the threshold')
         // isIntersecting will be true when it meets threshold
         if (entry.isIntersecting) {
           entry.target.play();
@@ -51,12 +51,13 @@ export default function App() {
   );
 
   function onScroll() {
+    console.log('[Scroll event] everytime you scroll this is called')
     /**
      * This forces the browser to re-layout the entire page:
      * https://gist.github.com/paulirish/5d52fb081b3570c81e3a
      */
     const rect = indyRef.current.getBoundingClientRect();
-    // I even don't know what I'm doing here 🤷🏻‍♀️
+    // I even don't know if this calculation is correct 🤷🏻‍♀️
     // We want to consider when more than 90% of the element is visible
     const top = rect.top + rect.height * 0.1;
     const bottom = rect.bottom - rect.height * 0.1;
