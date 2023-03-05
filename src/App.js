@@ -112,7 +112,7 @@ export default function App() {
         <h2>Indy (scroll events)</h2>
         <p></p>
         <div className="background indy-color">
-          <video autoPlay loop muted src={Indy} width="400" ref={indyRef} />
+          <video src={Indy} width="400" ref={indyRef} />
           <UglyGridComponent isShown={isUglyGridShown} />
         </div>
       </div>
